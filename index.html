@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SpiderX OG | Premium Gaming Community</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&family=VT323&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              outfit: ['Outfit', 'sans-serif'],
+              pixel: ['VT323', 'monospace'],
+            },
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      .font-outfit {
+        font-family: 'Outfit', sans-serif;
+      }
+      .font-pixel {
+        font-family: 'VT323', monospace;
+      }
+      /* Custom pastel gradients */
+      .bg-pastel-gradient {
+        background: linear-gradient(135deg, #E0BBE4 0%, #B2E2F2 50%, #FFDFD3 100%);
+      }
+      .dark .bg-pastel-gradient {
+        background: linear-gradient(135deg, #1e1b4b 0%, #0f172a 50%, #1e1b4b 100%);
+      }
+      /* Smooth transitions */
+      .page-transition {
+        animation: fadeIn 0.4s ease-out;
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      /* Minecraft-style Blocky Border */
+      .minecraft-panel {
+        image-rendering: pixelated;
+        border: 4px solid #373737;
+        box-shadow: inset -4px -4px 0px 0px #1d1d1d, inset 4px 4px 0px 0px #8b8b8b;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-slate-50 dark:bg-slate-950 transition-colors duration-300">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
